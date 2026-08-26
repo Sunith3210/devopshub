@@ -4,12 +4,6 @@ set -e
 
 REPO_NAME="devopshub"
 
-# Verify we're inside the correct repository
-if [[ "$(basename "$PWD")" != "$REPO_NAME" ]]; then
-    echo "Please run this script from the '$REPO_NAME' repository root."
-    exit 1
-fi
-
 echo "Creating DevOps documentation directory structure..."
 
 mkdir -p \
